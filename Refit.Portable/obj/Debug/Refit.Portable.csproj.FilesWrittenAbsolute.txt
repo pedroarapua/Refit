@@ -1,0 +1,8 @@
+/Users/pedroarapua/Projects/Refit/Refit.Portable/obj/Debug/.NETPortable,Version=v4.6,Profile=Profile151.AssemblyAttribute.cs
+/Users/pedroarapua/Projects/Refit/Refit.Portable/bin/Debug/Refit.Portable.dll.mdb
+/Users/pedroarapua/Projects/Refit/Refit.Portable/bin/Debug/Refit.Portable.dll
+/Users/pedroarapua/Projects/Refit/Refit.Portable/obj/Debug/Refit.Portable.dll
+/Users/pedroarapua/Projects/Refit/Refit.Portable/obj/Debug/Refit.Portable.dll.mdb
+/Users/pedroarapua/Projects/Refit/Refit.Portable/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/pedroarapua/Projects/Refit/Refit.Portable/bin/Debug/Newtonsoft.Json.dll
+/Users/pedroarapua/Projects/Refit/Refit.Portable/bin/Debug/Refit.dll
