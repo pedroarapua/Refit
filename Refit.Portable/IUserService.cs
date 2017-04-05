@@ -5,7 +5,8 @@ using Refit;
 
 namespace Refit.Portable
 {
-	public interface IUserService
+    [Headers("Accept: application/json")]
+    public interface IUserService
 	{
 		[Get("/")]
 		Task<List<User>> FindAllTeste([AliasAs("id")] int groupId, [AliasAs("sort")] string sortOrder);
