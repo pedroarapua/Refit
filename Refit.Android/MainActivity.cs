@@ -4,6 +4,7 @@ using Android.OS;
 using System.Collections.Generic;
 using Refit.Portable;
 using Refit;
+using System.Threading.Tasks;
 
 namespace Refit.Android
 {
@@ -25,7 +26,7 @@ namespace Refit.Android
 
 			button.Click += delegate { button.Text = $"{count++} clicks!"; };
 
-			List<User> users = await new UserService().(1, "desc");
+			List<User> users = await new UserService().FindAllTeste(1, "desc");
 			User user = await new UserService().FindOne("fdba6f63-99e6-4b3d-bcb4-d84719eb461a");
 		}
 	}
