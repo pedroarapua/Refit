@@ -53,7 +53,6 @@ namespace Refit.Portable
         //{
         //    get { return _speculative.Value; }
         //}
-
         //#endregion
 
         #region public methods
@@ -136,17 +135,17 @@ namespace Refit.Portable
             };
         }
 
-        private Lazy<IApiService<Y, K>> LazyGeneric(Priority priority = Priority.UserInitiated)
-        {
-            var y = new Lazy<IApiService<Y, K>>(() => RestService.For<IApiService<Y, K>>(this.GetLazyHttpClient(priority)));
-            return y;
-        }
+        //private Lazy<IApiService<Y, K>> LazyGeneric(Priority priority = Priority.UserInitiated)
+        //{
+        //    var y = new Lazy<IApiService<Y, K>>(() => RestService.For<IApiService<Y, K>>(this.GetLazyHttpClient(priority)));
+        //    return y;
+        //}
 
-        private Lazy<T> Lazy(Priority priority = Priority.UserInitiated)
-        {
-            var t = new Lazy<T>(() => RestService.For<T>(this.GetLazyHttpClient(priority)));
-            return t;
-        }
+        //private Lazy<T> Lazy(Priority priority = Priority.UserInitiated)
+        //{
+        //    var t = new Lazy<T>(() => RestService.For<T>(this.GetLazyHttpClient(priority)));
+        //    return t;
+        //}
 
         #endregion
     }

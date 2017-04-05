@@ -14,12 +14,14 @@ namespace Refit.Portable
 			
 		}
 
-		public async Task<List<User>> FindAllTeste([AliasAs("id")] int groupId, [AliasAs("sort")] string sortOrder)
+		public Task<List<User>> FindAllTeste([AliasAs("id")] int groupId, [AliasAs("sort")] string sortOrder)
 		{
             List<User> users = null;
 
-            Task<List<User>> task = base.ForLazy().Value.FindAllTeste(1, "desc");
+            //Task<List<User>> task = base.ForLazy().Value.FindAllTeste(1, "desc");
+			return base.ForLazy().Value.FindAllTeste(1, "desc");
 
+			/*
             if (CrossConnectivity.Current.IsConnected)
             {
                 users = await Policy
@@ -28,7 +30,9 @@ namespace Refit.Portable
                     .ExecuteAsync(async () => await task);
             }
 
+
             return users;
+            */
         }
 	}
 }
